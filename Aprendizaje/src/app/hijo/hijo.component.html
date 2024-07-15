@@ -1,0 +1,9 @@
+<!-- <p>Mensaje recibido desde el padre: {{recibirMensaje}} </p> -->
+
+<div>
+    <p appEstilo>Probar directiva</p>
+    <h1>Enviar mensaje</h1>
+    <label for="msj">Mensaje:</label>
+    <input type="text" name="msj" id="msj" [(ngModel)]="mensajeEnviado">
+    <button (click)="enviar()">Enviar</button>
+</div>

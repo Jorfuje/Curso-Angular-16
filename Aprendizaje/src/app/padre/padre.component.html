@@ -1,0 +1,9 @@
+<!-- <app-hijo [recibirMensaje]="enviarMsj"></app-hijo> -->
+
+<app-hijo (enviarMensaje)="recibir($event)"></app-hijo>
+
+<h2>Mensaje recibido: {{mensajeRecibido | miPipe}} </h2>
+
+<p>El nombre del padre es: {{padre}} </p>
+
+<button (click)="saludar()">Saludar</button>
