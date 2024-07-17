@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, // Formularios de tipo platilla.
+    ReactiveFormsModule, // Formularios reactivos.
+    HttpClientModule  // Para hacer peticiones Http
   ],
   providers: [],
   bootstrap: [AppComponent]
